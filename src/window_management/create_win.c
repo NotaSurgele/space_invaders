@@ -7,5 +7,6 @@ sfRenderWindow *create_window(void)
     sfRenderWindow *win;
     sfVideoMode mode = MODE;
     win = sfRenderWindow_create(mode, "My window", sfResize | sfClose, NULL);
+    sfRenderWindow_setFramerateLimit(win, 60);
     return win;
 }

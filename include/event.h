@@ -3,6 +3,7 @@
 #include "window.h"
 #include <SFML/Graphics.h>
 #include <SFML/System.h>
-int check_event(sfRenderWindow *win, sfEvent event);
 
+
+void close_win(sfRenderWindow *win, sfEvent event);
 #endif /* !EVENT_H_ */

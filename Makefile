@@ -6,11 +6,11 @@
 ##
 
 SRC	=	main.c\
-		$(wildcard src/*.c)\
 		$(wildcard src/window_management/*.c)\
-		$(wildcard src/sprite_engine/*.clean)
+		$(wildcard src/sprite_management/*.c)\
+		$(wildcard src/event/*.c)
 
-SRC_UT	=	tests/test_expr.c
+SRC_UT	=
 
 OBJ	=	$(SRC:.c=.o)
 
@@ -20,7 +20,7 @@ OBJ_UT	=	$(SRC_UT:.c=.o)
 
 INCLUDE	=	-I./include
 
-NAME	=	duck_hunt
+NAME	=	space_invaders
 
 NAME_UT	=	space_invaders
 
